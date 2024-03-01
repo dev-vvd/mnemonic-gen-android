@@ -1,4 +1,4 @@
-package com.example.mnemonic_gen_android
+package com.dev_vvd.mnemonic_gen_android
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

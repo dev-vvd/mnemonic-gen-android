@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.mnemonic_gen_android'
+    namespace 'com.dev_vvd.mnemonic_gen_android'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.mnemonic_gen_android"
+        applicationId "com.dev_vvd.mnemonic_gen_android"
         minSdk 24
         targetSdk 33
         versionCode 1
