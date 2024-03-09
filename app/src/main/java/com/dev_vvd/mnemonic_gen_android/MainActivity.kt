@@ -3,6 +3,7 @@ package com.dev_vvd.mnemonic_gen_android
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.dev_vvd.mnemonic_gen_android.databinding.ActivityMainBinding
 import java.security.SecureRandom
 import org.apache.commons.codec.binary.Hex
 import org.apache.commons.lang3.StringUtils
@@ -11,9 +12,11 @@ import java.security.MessageDigest
 
 class MainActivity : AppCompatActivity() {
     private val tag = "MainActivity"
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        val view = binding.root
+        setContentView(view)
 
         val entropy = getEntropy(16)
 
